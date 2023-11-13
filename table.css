@@ -1,0 +1,17 @@
+table
+{
+    border: 10px solid red;
+}
+tr
+{
+    height: 50px;
+}
+td
+{
+    /*lots being applied here*/
+    background-color: black;
+    color: white;
+    font-size: 22pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 50px;
+}

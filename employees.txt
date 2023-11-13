@@ -1,0 +1,5 @@
+meron - accountant
+afewerki - salesman
+melake - purchaser
+kahase - manager
+toby - human resources
