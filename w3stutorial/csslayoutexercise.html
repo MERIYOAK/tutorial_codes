@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family:Arial;
+  padding: 10px;
+  background: #f1f1f1;
+  }
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  height: 230px;
+  
+}
+.header h1{
+  font-size: 50px;
+}
+.nav{
+  background-color: #123422;
+  overflow:hidden;
+  }
+.nav a{
+ color:white;
+ display:block;
+ text-decoration:none;
+ padding: 15px;
+ text-align: center;
+ float:left;}
+ 
+.nav a:hover{
+   background-color: white;
+   color: black;}
+.fakeimg{
+  height:200px; 
+  background-color: #dedede;
+  padding:10px;
+  }
+.title1{
+  background-color: white;
+  padding: 20px;
+  margin-top:25px;
+  
+  }
+  
+.leftcolomn{
+  float:left;
+  width:75%;
+  padding-right:20px;}
+.rightcolomn{
+  float:right;
+  width:25%;
+  }
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolomn, .rightcolomn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+ 
+ 
+</style>
+</head>
+<body>
+   
+      <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect</p>
+      </div>
+      <div class="nav">
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#" style="float:right;">Link</a>
+      </div>
+      <div class="row">
+              <div  class="leftcolomn">
+                  <div class="title1">
+                       <h2>TITLE HEADING</h2>
+                       <h5>Title description, Dec 7, 2017</h5>
+                       <div class="fakeimg">image</div>
+                       <p>some text...</p>
+                       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  </div>
+                  <div class="title1">
+                       <h2>TITLE HEADING</h2>
+                       <h5>Title description, Dec 7, 2017</h5>
+                       <div class="fakeimg">image</div>
+                       <p>some text...</p>
+                       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                  </div>
+             </div>
+              <div class="rightcolomn">
+                   <div class="title1">
+                       <h2>About Me</h2>
+                       <div class="fakeimg" style="height:100px;">image</div>
+                       <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                   </div>
+                    <div class="title1">
+                         <h2>popular post</h2>
+                         <div class="fakeimg" style="height:100px;">image</div>
+                         <div class="fakeimg" style="height:100px;">image</div>
+                         <div class="fakeimg" style="height:100px;">image</div>
+                    </div>
+                    <div class="title1">
+                         <h2>Follow me</h2>
+                         <p>some text...</p>
+                    </div>
+             </div>
+     </div>
+     <div class="footer" style="width:100%;">
+         <h2>Footer</h2>
+     </div>
+</body>
+</html>
+
+

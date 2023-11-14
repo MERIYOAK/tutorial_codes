@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(46, 129, 129);
+        }
+        .sentence {
+            font-size: 20px;
+        }
+        .header{
+            width: 100%;
+            background-color: lightgray;
+            height: 250px;
+            font-weight: bold;
+            font-size: 50px;
+            
+        }
+        .title{
+            text-align: center;
+            padding-top: 90px;
+        }
+        .col1{
+            height: 400px;
+            background-color: rgb(80, 82, 78);
+            float: left;
+            width: 25%;
+            text-align: center;
+            padding-top: 185px;
+        }
+        .col2{
+            background-color: rgb(141, 142, 143);
+            height: 400px;
+            float: left;
+            width: 50%;
+            text-align: center;
+            padding-top: 185px;
+        }
+        .col3{
+            background-color: rgb(237, 241, 243);
+            height: 400px;
+            float: left;
+            width: 25%;
+            text-align: center;
+            padding-top: 185px;
+        }
+        .footer{
+            background-color: rgb(117, 131, 143);
+            width: 100%;
+            padding: 70px;
+            text-align: center;
+        
+        }
+       
+        @media only screen and (max-width: 768px){
+            .col1, .col2, .col3{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2> CSS Template using Flexbox</h2>
+    <p class="sentence">In this example, we have created a header, three unequal columns and a footer. On smaller screens, the columns will stack on top of each other. Resize the browser window to see the responsive effect.</p>
+    <p class="sentence"><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
+    <div class="header">
+        <p class="title">Header</p>
+    </div>
+    <div class="columns">
+        <div class="col1">Column</div>
+        <div class="col2">Column</div>
+        <div class="col3">Column</div>
+    </div>   
+    <div class="footer">Footer</div>                    
+</body>
+</html>

@@ -1,0 +1,82 @@
+Detailed Steps:
+
+- For Html
+  HTML is the backbone of any website. It's responsible for the structure and content of the webpage. Here's what to focus on:
+
+- Basic HTML syntax
+- Forms and inputs
+- Understanding the DOM (Document Object Model)
+- Semantic HTML (how to structure your HTML to convey meaning and improve accessibility)
+- SEO basics
+
+- For CSS
+  CSS is what makes websites look good. It's all about the design, layout, and variations in display for different devices and screen sizes.
+
+- Basic CSS syntax
+- CSS box model
+- Flexbox and CSS Grid for layout designs
+- Responsive design principles
+- Animation with CSS - CSS variables
+
+- Learn CSS Preprocessors (Sass or Less)
+  Preprocessors add extra functionality to CSS like variables, mixins, and functions which make CSS more maintainable.
+
+- Setting up a preprocessor
+- Sass or Less syntax
+- Creating variables and mixins
+- Nesting CSS rules
+
+- For Javascript
+  JavaScript is the scripting language used to make webpages interactive. It's essential to learn both the basics and the advanced parts of JavaScript.
+
+- Syntax and basic constructs
+- Asynchronous JavaScript (Promises, async/await)
+- ES6+ concepts (let/const, arrow functions, destructuring, template literals, modules etc.)
+- DOM Manipulation and events
+- JSON and data fetching (Ajax, fetch API)
+- Understanding the concept of closures, and prototypal inheritance
+
+- Learn Git and GitHub
+  Git is a version control system that helps you to keep track of changes made to the project. GitHub is a cloud-based hosting service that lets you manage Git repositories.
+
+-Basic command line commands
+
+- Basic Git commands (add, commit, push, pull)
+- Branching and merging
+- Resolving merge conflicts
+- Using GitHub (creating repositories, pull requests, and issues)
+
+- Learn a JavaScript Framework/Library (React recommended)
+  React is a popular JavaScript library for building interactive UI components.
+
+- Understanding the virtual DOM
+- React components (Functional and Class)
+- State and props
+- Component lifecycle methods (for class components) or hooks (for functional components)
+- Making API calls in React
+- Routing with React Router
+- State management with Context API, Redux, or MobX (knowing one is generally enough, but each has its own use cases)
+
+- Modern CSS (CSS-in-JS, CSS Modules)
+  Modern front-end development often involves component-based styles.
+
+- CSS Modules
+- Styled Components
+- Emotion
+- JSS
+
+- CSS Frameworks (Tailwind CSS recommended)
+  Tailwind CSS is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+
+- Understanding utility-first CSS
+- Tailwind CSS syntax
+- Configuring Tailwind CSS
+- Responsiveness in Tailwind CSS
+
+- Learn Authentication Strategies
+  Most apps will require user authentication in some form.
+
+- OAuth
+- JWT
+- Understanding sessions
+- Implementing authentication in React

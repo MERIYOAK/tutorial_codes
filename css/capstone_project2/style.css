@@ -1,0 +1,162 @@
+/************** prerequisites  ***************/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+}
+
+section, footer {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Light Mode Styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode header span{
+    background-color: #343a40; /* Adjust the color as needed */
+    color: #ffffff;
+    background-color: #000;
+}
+
+body.dark-mode header a{
+    background-color: #343a40; /* Adjust the color as needed */
+    color: #ffffff;
+    background-color: #000;
+}
+
+/****home section***/
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    justify-content: center; 
+    align-items: center; 
+        
+}
+
+.home_content h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.home_img img {
+    width: 350px; 
+    border-radius: 40%;
+}
+
+.custom-control {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/******education*****/
+.eduexp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.eduexp ul {
+    list-style: none;
+    text-align: center;
+}
+
+.eduexp li {
+    font-weight: 600;
+}
+
+.eduexp small {
+    font-weight: 200;
+}
+
+/***skills******/
+.skilan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    padding: 1rem;
+}
+
+.skill_item {
+    display: flex;
+    justify-content:space-between
+}
+
+/***contact and hobby***/
+.hobcon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.socials a {
+    font-size: 1.5rem;
+}
+
+/********footer*****/
+.footer_links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer small {
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+
+/***media queries******/
+@media (max-width: 730px) {
+    .home {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .eduexp, .skilan, .hobcon {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    
+}
+
+
+
+

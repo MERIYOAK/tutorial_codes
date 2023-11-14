@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(81, 86, 90);
+            text-align: center;
+            padding: 50px;
+            font-size: 30px;
+        }
+
+        .gridcontainer{
+            display: grid;
+            grid-template-areas:'header header header header header header'
+                                'left middle middle middle middle right' 
+                                'footer footer footer footer footer footer';
+        }
+        .col1, .col2, .col3{
+            text-align: center;
+            padding: 50px;
+            height: 400px;
+        }
+        .col1{
+            grid-area: right;
+            background-color: antiquewhite;
+        }
+        .col2{
+            grid-area: middle;
+            background-color: rgb(91, 117, 139);
+        }
+        .col3{
+            grid-area: left;
+            background-color: rgb(128, 131, 134);
+        }
+        .footer{
+            grid-area: footer;
+            background-color: rgb(190, 174, 149);
+            text-align: center;
+            padding: 50px;
+
+        }
+        @media only screen and (max-width: 768px) {
+            .gridcontainer{
+                grid-template-areas:'header header header header header header'
+                                'left left left left left left ' 
+                                'middle middle middle middle middle middle  '
+                                'right right right right right right'
+                                'footer footer footer footer footer footer';
+            }
+            body{
+                background-color: olivedrab;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2> CSS Template using Flexbox</h2>
+    <p>In this example, we have created a header, three unequal columns and a footer. On smaller screens, the columns will stack on top of each other. Resize the browser window to see the responsive effect.</p>
+    <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
+    <div class="gridcontainer">
+        <div class="header">
+            <h2>Header</h2>
+        </div>
+        <div class="col1">Column</div>
+        <div class="col2">Column</div>
+        <div class="col3">Column</div>
+        <div class="footer">
+            <p>Footer</p>
+        </div> 
+    </div>                   
+</body>
+</html>
